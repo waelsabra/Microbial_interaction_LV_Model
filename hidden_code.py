@@ -26,12 +26,12 @@ def lotka_volterra(t, X, mu1, mu2, K1, K2, B12, B21):
 # 🎛️ UI Elements
 # -----------------------------
 # Sliders
-X1_0_slider = widgets.FloatSlider(value=1.0, min=0.0, max=10.0, step=0.1, description='X1 Initial')
-X2_0_slider = widgets.FloatSlider(value=1.0, min=0.0, max=10.0, step=0.1, description='X2 Initial')
+X1_0_slider = widgets.FloatSlider(value=1.0, min=0.0, max=10.0, step=0.01, description='X1 Initial')
+X2_0_slider = widgets.FloatSlider(value=1.0, min=0.0, max=10.0, step=0.01, description='X2 Initial')
 mu1_slider = widgets.FloatSlider(value=0.5, min=0.1, max=1.0, step=0.01, description='μ1')
 mu2_slider = widgets.FloatSlider(value=0.3, min=0.1, max=1.0, step=0.01, description='μ2')
-K1_slider = widgets.FloatSlider(value=10.0, min=1.0, max=100.0, step=1.0, description='K1')
-K2_slider = widgets.FloatSlider(value=20.0, min=1.0, max=100.0, step=1.0, description='K2')
+K1_slider = widgets.FloatSlider(value=10.0, min=1.0, max=100.0, step=0.5, description='K1')
+K2_slider = widgets.FloatSlider(value=20.0, min=1.0, max=100.0, step=0.5, description='K2')
 B12_slider = widgets.FloatSlider(value=0.02, min=0.0, max=1, step=0.005, description='B12')
 B21_slider = widgets.FloatSlider(value=0.01, min=0.0, max=1, step=0.005, description='B21')
 
